@@ -1,0 +1,91 @@
+body, html {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+
+    font-family:Courier, monospace;
+    font-size:14px;
+}
+
+.flexbox {
+    display:flex;
+}
+
+.flex {
+    flex: 1;
+}
+
+.push {
+    display:flex;
+    flex-grow:1;
+}
+
+.full-width {
+    width:100%;
+}
+
+.full-height {
+    height:100%;
+}
+
+textarea {
+    resize:none;
+    box-sizing:border-box;
+    height: calc(100% - 52px);
+    border:none;
+    padding:10px;
+    font-size:inherit;
+    font-family:inherit;
+}
+
+.left-panel {
+    position:relative;
+}
+.left-panel canvas, .left-panel div {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+}
+.left-panel div {
+    padding:10px;
+    margin:0;
+    height:100%;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.left-panel pre {
+    color:#0F0;
+    margin:0;
+    height:100%;
+    overflow:hidden;
+}
+
+.toolbar {
+    background-color:#CCC;
+    height: 50px;
+    box-sizing:border-box;
+    padding:0 10px;
+}
+.toolbar .left, .toolbar .right {
+    height:50px;
+}
+
+.toolbar a {
+    display:inline-block;
+    height:50px;
+    line-height:50px;
+    box-sizing:border-box;
+    text-align:center;
+    padding:0 20px;
+
+    border:none 1px #AAA;
+    border-left-style:solid;
+}
+
+.toolbar .left a:last-child, .toolbar .right a:last-child {
+    border-right-style:solid;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "BASIC-web",
+  "version": "0.1.0",
+  "description": "A web IDE for BASIC apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "basic",
+    "ide",
+    "web",
+    "editor"
+  ],
+  "author": "mrfishie <me@mrfishie.com>",
+  "license": "MIT",
+  "dependencies": {
+    "basic-lang": "^0.1.0"
+  }
+}
