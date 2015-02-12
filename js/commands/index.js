@@ -18,3 +18,4 @@ exports.point = require('./point');
 exports.line = require('./line');
 exports.rrect = require('./rrect');
 exports.circle = require('./circle');
+exports.ellipse = require('./ellipse');

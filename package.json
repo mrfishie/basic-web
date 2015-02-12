@@ -15,6 +15,7 @@
   "author": "mrfishie <me@mrfishie.com>",
   "license": "MIT",
   "dependencies": {
-    "basic-lang": "^0.1.0"
+    "basic-lang": "^0.1.0",
+    "codemirror": "^4.12.0"
   }
 }

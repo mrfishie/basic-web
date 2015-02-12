@@ -14,5 +14,5 @@ module.exports = function(ctx, props, args, respond) {
     ctx.fillStyle = color;
 
     var halfSize = args.size / 2;
-    ctx.fillRect(args.x - halfSize, args.y - halfSize, args.x + halfSize, args.y + halfSize);
+    ctx.fillRect(args.x - halfSize, args.y - halfSize, args.size, args.size);
 };

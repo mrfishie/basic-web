@@ -24,7 +24,8 @@ module.exports = function(ctx, props, args, respond) {
     ctx.restore();
 
     if (args.stroke > 0) {
-        ctx.strokeStyle = 'solid ' + args.stroke + 'px ' + color;
+        ctx.strokeStyle = color;
+        ctx.lineWidth = args.stroke;
         ctx.stroke();
     } else {
         ctx.fillStyle = color;

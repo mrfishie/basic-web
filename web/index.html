@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
 
+    <link rel="stylesheet" href="codemirror.css">
     <link rel="stylesheet" href="style.css">
     <script src="bundle.js"></script>
 </head>
@@ -12,7 +13,7 @@
 <div class="panel-container flexbox full-height">
     <div class="panel left-panel flex full-height">
         <canvas id="canvas" width="500" height="500" style="background-color:black;" class="full-width full-height"></canvas>
-        <div><pre id="terminal" class="full-width full-height"></pre></div>
+        <div><pre id="terminal" class="full-width full-height"><span id="input-area"></span><span id="terminal-input" style="display:none"><span id="input-cursor">▄</span></span></pre></div>
     </div>
     <div class="panel right-panel flex full-height">
         <textarea placeholder="Enter code here..." id="code" class="full-width">
@@ -28,6 +29,8 @@ PRINT "Hello World!"</textarea>
         </div>
     </div>
 </div>
+
+<textarea style="opacity:0" id="terminal-in"></textarea>
 
 </body>
 </html>

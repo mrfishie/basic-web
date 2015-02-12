@@ -22,7 +22,7 @@ body, html {
     flex-grow:1;
 }
 
-.full-width {
+.full-width, .CodeMirror {
     width:100%;
 }
 
@@ -64,6 +64,24 @@ textarea {
     overflow:hidden;
 }
 
+.right-panel, .left-panel {
+    position:absolute;
+    top:0;
+    bottom:0;
+}
+.right-panel {
+    left:50%;
+    right:0;
+}
+.left-panel {
+    left:0;
+    right:50%;
+}
+
+.CodeMirror {
+    height:calc(100% - 50px);
+}
+
 .toolbar {
     background-color:#CCC;
     height: 50px;
@@ -88,4 +106,12 @@ textarea {
 
 .toolbar .left a:last-child, .toolbar .right a:last-child {
     border-right-style:solid;
+}
+
+#terminal-in {
+    position:fixed;
+    width:1px;
+    height:1px;
+    top:-200em;
+    left:-200em;
 }

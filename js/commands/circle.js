@@ -15,7 +15,8 @@ module.exports = function(ctx, props, args, respond) {
     ctx.arc(args.x, args.y, args.radius, 0, 2 * Math.PI, false);
 
     if (args.stroke > 0) {
-        ctx.strokeStyle = 'solid ' + args.stroke + 'px ' + color;
+        ctx.strokeStyle = color;
+        ctx.lineWidth = args.stroke;
         ctx.stroke();
     } else {
         ctx.fillStyle = color;

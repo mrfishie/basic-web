@@ -11,7 +11,8 @@ var toColor = require('../toColor');
 module.exports = function(ctx, props, args, respond) {
     var color = toColor(props.r, props.g, props.b, props.a);
 
-    ctx.strokeStyle = 'solid ' + args.width + 'px ' + color;
+    ctx.strokeStyle = color;
+    ctx.lineWidth = args.width;
     ctx.beginPath();
     ctx.moveTo(args.x1, args.y1);
     ctx.lineTo(args.x2, args.y2);
